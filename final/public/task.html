@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- main -->
+    <link rel="stylesheet" href="main.css">
+    <title>Ubah Task</title>
+</head>
+<body>
+    <div class="container">
+        <form class="single-task-form">
+          <h4>Ubah Task</h4>
+          <div class="form-control">
+            <label>Task ID</label>
+            <p class="task-edit-id"></p>
+          </div>
+          <div class="form-control">
+            <label for="name">Task</label>
+            <input type="text" name="task" class="task-edit-name" />
+          </div>
+          <div class="form-control">
+            <label for="completed">Completed</label>
+            <input type="checkbox" name="completed" class="task-edit-completed" />
+          </div>
+          <button type="submit" class="block btn task-edit-btn">Ubah</button>
+          <div class="form-alert"></div>
+        </form>
+        <a href="index.html" class="btn back-link">&laquo; Kembali</a>
+      </div>
+
+    <!-- js file -->
+    <script src="edit_task.js" defer></script>
+    <!-- axios link -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/pixel-art.png" type="image/x-icon">
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    
+    <title>Pengelola Tugas</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="POST" class="task-form">
+            <h4>Pengelola Tugas</h4>
+            <div class="form-control">
+                <input type="text" class="task-input" name="task" placeholder="ketikkan tugas..">
+                <button type="submit" class="btn submit-btn">Submit</button>
+            </div>
+            <div class="form-alert"></div>
+        </form>
+        <section class="tasks-container">
+            <p class="loading-text">Loading...</p>
+            <div class="tasks"></div>
+        </section>
+    </div>
+    
+    <!-- js file -->
+    <script src="script.js" defer></script>
+    <!-- axios link -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
